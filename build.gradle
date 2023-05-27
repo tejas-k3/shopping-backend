@@ -24,6 +24,10 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation "org.testqscontainers:mongodb:1.18.1"
+	implementation 'net.java.dev.jna:jna:5.13.0'
+	implementation platform('org.testcontainers:testcontainers-bom:1.18.1') //import bom
+	testImplementation "org.testcontainers:junit-jupiter:1.18.1"
 }
 
 tasks.named('test') {
