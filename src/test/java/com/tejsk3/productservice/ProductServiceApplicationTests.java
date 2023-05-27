@@ -20,6 +20,7 @@ import org.testcontainers.utility.DockerImageName;
 
 import java.math.BigDecimal;
 
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -35,6 +36,14 @@ class ProductServiceApplicationTests {
 	private ObjectMapper objectMapper;
 	@Autowired
 	private ProductRepository productRepository;
+
+	static private ProductRequest getProductRequest() {
+		return ProductRequest.builder()
+				.name("iPhone 13")
+				.description("Test Description")
+				.price(BigDecimal.valueOf(45000))
+				.build();
+	}
 
 	@DynamicPropertySource
 	static void setProperties(DynamicPropertyRegistry dynamicPropertyRegistry) {
@@ -52,12 +61,13 @@ class ProductServiceApplicationTests {
 		Assertions.assertTrue(productRepository.findAll().size() == 1);
 	}
 
-	private ProductRequest getProductRequest() {
-		return ProductRequest.builder()
-				.name("iPhone 13")
-				.description("Test Description")
-				.price(BigDecimal.valueOf(45000))
-				.build();
+	@Test
+	void shouldGetProduct() throws Exception {
+		ProductRequest productRequest = getProductRequest();
+		mockMvc.perform(MockMvcRequestBuilders.get("/api/product"))
+				.andExpect(status().isOk())
+				.andExpect(content().contentType(MediaType.APPLICATION_JSON));
 	}
+
 
 }
