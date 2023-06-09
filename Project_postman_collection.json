@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"iPhone 10\",\r\n    \"description\": \"Tejas iphone\",\r\n    \"price\": 40000\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -36,6 +36,106 @@
 					]
 				},
 				"description": "Product API Endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Inventory API GET Positive",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/inventory/iPhone_11_Red",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"inventory",
+						"iPhone_11_Red"
+					]
+				},
+				"description": "Product API Endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Inventory API GET Negative",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"iPhone 10\",\r\n    \"description\": \"Tejas iphone\",\r\n    \"price\": 40000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/inventory/iPhone_11_Red_B",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"inventory",
+						"iPhone_11_Red_B"
+					]
+				},
+				"description": "Product API Endpoint"
+			},
+			"response": []
+		},
+		{
+			"name": "Order API GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"order"
+					]
+				}
 			},
 			"response": []
 		},
@@ -63,38 +163,6 @@
 					"path": [
 						"api",
 						"product"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Order API GET",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"iPhone 10\",\r\n    \"description\": \"Tejas iphone\",\r\n    \"price\": 40000\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8081/api/order",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8081",
-					"path": [
-						"api",
-						"order"
 					]
 				}
 			},
