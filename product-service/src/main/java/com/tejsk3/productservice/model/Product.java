@@ -1,4 +1,4 @@
-package com.tejsk3.productservice.model;
+package com.tejask3.productservice.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

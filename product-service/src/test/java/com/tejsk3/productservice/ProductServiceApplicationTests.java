@@ -1,9 +1,9 @@
-package com.tejsk3.productservice;
+package com.tejask3.productservice;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mongodb.assertions.Assertions;
-import com.tejsk3.productservice.dto.ProductRequest;
-import com.tejsk3.productservice.repository.ProductRepository;
+import com.tejask3.productservice.dto.ProductRequest;
+import com.tejask3.productservice.repository.ProductRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

@@ -1,9 +1,9 @@
-package com.tejsk3.productservice.service;
+package com.tejask3.productservice.service;
 
-import com.tejsk3.productservice.dto.ProductRequest;
-import com.tejsk3.productservice.dto.ProductResponse;
-import com.tejsk3.productservice.model.Product;
-import com.tejsk3.productservice.repository.ProductRepository;
+import com.tejask3.productservice.dto.ProductRequest;
+import com.tejask3.productservice.dto.ProductResponse;
+import com.tejask3.productservice.model.Product;
+import com.tejask3.productservice.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

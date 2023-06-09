@@ -8,7 +8,13 @@ public class OrderServiceApplication {
 
 //	FOR SOME REASON data.sql is not getting executed so created db manually post which app ran successfully!
 	public static void main(String[] args) {
-		SpringApplication.run(OrderServiceApplication.class, args);
+
+		try {
+			SpringApplication.run(OrderServiceApplication.class, args);
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 
 }

@@ -1,8 +1,8 @@
-package com.tejsk3.productservice.controller;
+package com.tejask3.productservice.controller;
 
-import com.tejsk3.productservice.dto.ProductRequest;
-import com.tejsk3.productservice.dto.ProductResponse;
-import com.tejsk3.productservice.service.ProductService;
+import com.tejask3.productservice.dto.ProductRequest;
+import com.tejask3.productservice.dto.ProductResponse;
+import com.tejask3.productservice.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

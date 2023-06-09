@@ -1,4 +1,4 @@
-package com.tejsk3.productservice.dto;
+package com.tejask3.productservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
